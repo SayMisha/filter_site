@@ -359,6 +359,12 @@ function menuFixed() {
 				"margin-top": "0"
 			})
 		}
+
+    $('.menu_product.about_company').slideUp(250);
+    $('.menu_product:first').slideUp(250);
+    $('.search_all').slideUp(250);
+    $('.menu_product').slideUp(250);
+
 	});
 }
 menuFixed();
