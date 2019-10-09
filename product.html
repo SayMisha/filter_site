@@ -5,41 +5,138 @@
     <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Filter</title>
 </head>
 <body>
+
+    <div class="map_info"></div>
     <div class="container_filter">
-        
+    <div class="overlay"></div>
+
+
         <section class="header_menu">
             <div class="wrap_long">
                 <div class="header_logo">
                     <img src="img/header_logo.svg" alt="Логотип" width="142" height="58">
+                    <a href="index.html"></a>
+                </div>
+                <div class="menu_button">
+                    <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+                    <label for="checkbox1">
+                        <div class="hamburger hamburger1">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                            <span class="bar bar3"></span>
+                            <span class="bar bar4"></span>
+                        </div>
+                    </label>
                 </div>
 
                 <div class="menu">
                     <ul class="menu_list">
-                        <li class="menu_item"><a href="#">О компании</a></li>
-                        <li class="menu_item"><a href="#">Продукция</a></li>
+                        <li class="menu_item"><a class="about_company_link">О компании</a></li>
+                        <li class="menu_item"><a class="menu_product_link">Продукция</a></li>
                         <li class="menu_item"><a href="#">Сертификаты</a></li>
                         <li class="menu_item"><a href="#">География поставок</a></li>
-                        <li class="menu_item"><a href="#">Контакты</a></li>
+                        <li class="menu_item"><a href="contacts.html">Контакты</a></li>
                     </ul>
 
                     <a class="menu_search"></a>
                 </div>
 
                 <div class="header_call">
-                    <div class="header_phone">+7 (48434) 4-10-10</div>
-                    <div class="header_callback">Заказать звонок</div>
+                    <div class="header_phone"><a href="tel:+74843441010">+7 (48434) 4-10-10</a></div>
+                    <div class="header_callback"><a href="#">Заказать звонок</a></div>
+                </div>
+                <a class="menu_search menu_search_mobile"></a>
+                <div class="header_lang">
+                    <span><a href="#">En</a></span>
                 </div>
 
-                <div class="header_lang">
-                    <span>En</span>
+                <div class="search_all">
+                    <div class="search_all_enter">
+                        <input type="text" class="search_all_input" placeholder="Что вы хотите найти?">
+                        <a href="#" class="search_all_button">Найти на сайте</a>
+                    </div>
                 </div>
+
+
+                <div class="menu_product">
+                    <div class="wrap">
+                        <div class="footer_column2 menu_product_columns">
+                            <h3 class="footer_title">Продукция</h3>
+                            <div class="footer_list_wrapper">
+                                <ul class="footer_list footer_list1">
+                                    <li class="footer_item"><a href="section.html">Фильтры очистки воздуха</a></li>
+                                    <li class="footer_item"><a href="#">Фильтры очистки воздуха общего назначения</a></li>
+                                    <li class="footer_item"><a href="#">Фильтры высокой и сверхвысокой эффективности для чистых помещений</a></li>
+                                </ul>
+
+                                <ul class="footer_list footer_list2">
+                                    <li class="footer_item"><a href="#">Элементы конструкций чистых помещений</a></li>
+                                    <li class="footer_item"><a href="#">Потолок подвесной модульный</a></li>
+                                    <li class="footer_item"><a href="#">Стеновые облицовочные панели</a></li>
+                                    <li class="footer_item"><a href="#">Системы подготовки воздуха для чистых помещений</a></li>
+                                    <li class="footer_item"><a href="#">Светильники</a></li>
+                                    <li class="footer_item"><a href="#">Чистые зоны</a></li>
+                                </ul>
+
+                                <ul class="footer_list footer_list3">
+                                    <li class="footer_item"><a href="#">Фильтрующие элементы и оборудование для очистки жидкостей</a></li>
+                                    <li class="footer_item"><a href="#">Фильтрующие элементы типа механической очистки</a></li>
+                                    <li class="footer_item"><a href="#">Листовой фильтрующий материал</a></li>
+                                    <li class="footer_item"><a href="#">Фильтродержатели</a></li>
+                                    <li class="footer_item"><a href="#">Фильтры и оборудование для водоснабжения и водоотведения</a></li>
+                                </ul>
+
+                                <div class="product_galery product_galery_position" style="background-image: url('img/gallery.jpg');">
+                                    <div class="product_galery_text">Галерея</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="menu_product about_company">
+                    <div class="wrap">
+                        <div class="footer_column2 menu_product_columns">
+                            <h3 class="footer_title">О компании</h3>
+                            <div class="footer_list_wrapper">
+                                <ul class="about_company_text_list">
+                                    <li class="about_company_text_item about_company_text_item1"><a href="news.html">Новости</a></li>
+                                    <li class="about_company_text_item about_company_text_item2"><a href="#">Публикации в СМИ</a></li>
+                                    <li class="about_company_text_item about_company_text_item3"><a href="#">История компании</a></li>
+                                </ul>
+
+                                <ul class="about_company_product_list">
+                                    <li class="about_company_product_item about_company_product_item1">
+                                        <img src="img/about_company_img1.png" width="165" height="108" alt="" class="about_company_product_img">
+                                        <a href="#" class="about_company_link">Фильтровентиляционный модуль ФВМн-1206-ЕС-ВХХ</a>
+                                    </li>
+                                    <li class="about_company_product_item about_company_product_item2">
+                                        <img src="img/about_company_img2.png" width="165" height="108" alt="" class="about_company_product_img">
+                                        <a href="#" class="about_company_link">Фильтр марпки ФТ</a>
+                                    </li>
+                                </ul>
+
+                                <div class="product_galery about_company_pict" style="background-image: url('img/about_company_sale.png');">
+                                    <div class="about_company_pict_text">Пример акции</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </section>
-
 
         <section class="broadcrumbs">
             <div class="wrap">
@@ -57,7 +154,7 @@
         <section class="sections_item">
             <div class="wrap">
                 <h2 class="title">ФТОВ НП</h2>
-                
+
 
                 <div class="section_menu_button">
                     <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
@@ -130,7 +227,7 @@
                                 <span>Корпус:</span> алюминиевый профиль
                             </p>
                             <p class="product_info_text">
-                                <span>Фильтрующий материал:</span> стеклобумага на основе ультра- и микротонкого стекловолокна 
+                                <span>Фильтрующий материал:</span> стеклобумага на основе ультра- и микротонкого стекловолокна
                             </p>
                             <p class="product_info_text">
                                 <span>Разделители:</span> клей-расплав
@@ -139,7 +236,7 @@
                                 <span>Герметик:</span> полиуретан
                             </p>
                             <p class="product_info_text">
-                                <span>Уплотнение:</span> EPDM резина, вспененный полиуретан 
+                                <span>Уплотнение:</span> EPDM резина, вспененный полиуретан
                             </p>
                         </div>
 
@@ -148,8 +245,10 @@
                             <p>ФТОВ НП Н13 610х610х78-10-01</p>
                         </div>
 
-                        <button class="product_button">Заказать</button>
+                        <button class="product_button button_modal_form">Заказать</button>
                     </div>
+
+
 
 
 
@@ -605,12 +704,371 @@
 
                 </div>
             </section>
+</div>
+
+            <div class="modal_product--wrapper">
+                    <button type="button" class="modal_product--close"></button>
+                <form class="modal_product--form">
+                    <div class="wrap_step_1 wrap_step wrap_steps_show">
+                        <div class="step_1--top-line"></div>
+                        <div class="step_1--info">
+                            <p class="step_nomber--text">Шаг 1 из 6</p>
+                            <h4 class="modal_product--title">Выберите класс фильтра</h4>
+                            <p class="modal_product--minitext">85, 95, 99.95, 99.995 Эффективность согласно
+                                ГОСТ Р ЕН 1822-1-2010 в точке MPPS, %</p>
+
+                            <div class="modal_product--inputs">
+                                <div class="modal_product--input">
+                                    <input type="radio" name="step_1--radio" id="step_1--1">
+                                    <label for="step_1--1">E10</label>
+
+                                    <p class="modal_product--input_text">85</p>
+                                </div>
+
+                                <div class="modal_product--input">
+                                    <input type="radio" name="step_1--radio" id="step_1--2">
+                                    <label for="step_1--2">E11</label>
+
+                                    <p class="modal_product--input_text">95</p>
+                                </div>
+
+                                <div class="modal_product--input">
+                                    <input type="radio" name="step_1--radio" id="step_1--3">
+                                    <label for="step_1--3">E12</label>
+
+                                    <p class="modal_product--input_text">99,5</p>
+                                </div>
+
+                                <div class="modal_product--input">
+                                    <input type="radio" name="step_1--radio" id="step_1--4">
+                                    <label for="step_1--4">H13</label>
+
+                                    <p class="modal_product--input_text">99,95</p>
+                                </div>
+
+                                <div class="modal_product--input">
+                                    <input type="radio" name="step_1--radio" id="step_1--5">
+                                    <label for="step_1--5">H14</label>
+
+                                    <p class="modal_product--input_text">99.995</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrap_step_2 wrap_step">
+                        <div class="step_1--top-line step_2__line"></div>
+                        <div class="step_1--info">
+                            <p class="step_nomber--text">Шаг 2 из 6</p>
+                            <h4 class="modal_product--title">Выберите размеры фильтра</h4>
+
+                            <div class="size_radio_info">
+                                    <div class="size_radio_info--wrapper">
+                                <input class="input_size_radio" type="radio" name="size_radio" id="size_radio1" checked>
+                                <label class="label_size_radio label_size_radio1" for="size_radio1">Стандартные размеры фильтра</label>
+                                    </div>
+                                <div class="size_radio_info--wrapper">
+                                <input class="input_size_radio" type="radio" name="size_radio" id="size_radio2">
+                                <label class="label_size_radio label_size_radio2" for="size_radio2">Свои размеры фильтра</label>
+                            </div>
+                            </div>
+
+                            <div class="modal_product--inputs inputs_step2_size_standart">
+                                <div class="modal_product--input">
+                                    <input type="radio" name="step_2--radio" id="step_2--1">
+                                    <label for="step_2--1">305х305х78</label>
+
+                                    <p class="modal_product--input_text">120 м3/ч</p>
+                                </div>
+
+                                <div class="modal_product--input">
+                                    <input type="radio" name="step_2--radio" id="step_2--2">
+                                    <label for="step_2--2">457х457х78</label>
+
+                                    <p class="modal_product--input_text">240 м3/ч</p>
+                                </div>
+
+                                <div class="modal_product--input">
+                                    <input type="radio" name="step_2--radio" id="step_2--3">
+                                    <label for="step_2--3">305х610х78</label>
+
+                                    <p class="modal_product--input_text">250 м3/ч</p>
+                                </div>
+
+                                <div class="modal_product--input">
+                                    <input type="radio" name="step_2--radio" id="step_2--4">
+                                    <label for="step_2--4">530х530х78</label>
+
+                                    <p class="modal_product--input_text">300 м3/ч</p>
+                                </div>
+
+                                <div class="modal_product--input">
+                                    <input type="radio" name="step_2--radio" id="step_2--5">
+                                    <label for="step_2--5">610х610х78</label>
+
+                                    <p class="modal_product--input_text">500 м3/ч</p>
+                                </div>
+                            </div>
+
+                            <div class="modal_product--inputs inputs_step2_size_his">
+                                <input class="size_his_input size_his_input1" type="text" placeholder="Ш,мм">x
+                                <input class="size_his_input size_his_input2" type="text" placeholder="В,мм">x
+                                 <select name="size_his_select" class="size_his_selection" style="color:gray" onchange="this.style.color='black'">
+                                    <option disabled hide selected="selected">Г,мм</option>
+                                    <option>78,мм</option>
+                                    <option>90,мм</option>
+                                    <option>117,мм</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="wrap_step_3 wrap_step">
+                        <div class="step_1--top-line step_3__line"></div>
+                        <div class="step_1--info">
+                            <p class="step_nomber--text">Шаг 3 из 6</p>
+                            <h4 class="modal_product--title">Выберите сторону уплотнения</h4>
+                            <div class="modal_product--minitext step_3--minitext">
+                                <p>01 – Уплотнение на выходе воздушного потока</p>
+                                <p>10 –  Уплотнение на входе воздушного потока</p>
+                                <p>00 –  Без уплотнения</p>
+                                <p>11 – Уплотнение с двух сторн</p>
+                            </div>
+
+                            <div class="modal_product--inputs inputs_step3">
+                                <div class="modal_product--input">
+                                    <input type="radio" name="step_3--radio" id="step_3--1">
+                                    <label for="step_3--1" data-info="Уплотнение на выходе воздушного потока">00</label>
+                                </div>
+
+                                <div class="modal_product--input">
+                                    <input type="radio" name="step_3--radio" id="step_3--2">
+                                    <label for="step_3--2" data-info="Уплотнение на входе воздушного потока">01</label>
+                                </div>
+
+                                <div class="modal_product--input">
+                                    <input type="radio" name="step_3--radio" id="step_3--3">
+                                    <label for="step_3--3" data-info="Без уплотнения">10</label>
+                                </div>
+
+                                <div class="modal_product--input">
+                                    <input type="radio" name="step_3--radio" id="step_3--4">
+                                    <label for="step_3--4" data-info="Уплотнение с двух сторн">11</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="wrap_step_4 wrap_step">
+                        <div class="step_1--top-line step_4__line"></div>
+                        <div class="step_1--info">
+                            <p class="step_nomber--text">Шаг 4 из 6</p>
+                            <h4 class="modal_product--title">Выберите тип уплотнения</h4>
+                            <div class="modal_product--minitext step_4--minitext">
+                                <p>D – Бесшовный вспененный уплотнитель</p>
+                                <p>I – Плокий уплотнитель из ЕПДМ резины</p>
+                                <p>U – образный уплотнитель</p>
+                            </div>
+
+                            <div class="modal_product--inputs inputs_step4">
+                                <div class="modal_product--input input_step4 input_step4_1">
+                                    <input type="radio" name="step_4--radio" id="step_4--1">
+                                    <label for="step_4--1" data-info="Бесшовный вспененный уплотнитель">D</label>
+                                </div>
+
+                                <div class="modal_product--input input_step4 input_step4_2">
+                                    <input type="radio" name="step_4--radio" id="step_4--2">
+                                    <label for="step_4--2" data-info="Плокий уплотнитель из ЕПДМ резины">I</label>
+                                </div>
+
+                                <div class="modal_product--input input_step4 input_step4_3">
+                                    <input type="radio" name="step_4--radio" id="step_4--3">
+                                    <label for="step_4--3" data-info="U - образный уплотнитель">U</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="wrap_step_5 wrap_step">
+                        <div class="step_1--top-line step_5__line"></div>
+                        <div class="step_1--info">
+                            <p class="step_nomber--text">Шаг 5 из 6</p>
+                            <h4 class="modal_product--title">Выберите сторону защитной сетки</h4>
+                            <div class="modal_product--minitext step_3--minitext">
+                                <p>00 –  Без защитной сетки</p>
+                                <p>10 –  Защитная сетка на выходе воздушного потока</p>
+                                <p>01 – Защитная сетка на выходе воздушного потока</p>
+                                <p>11 – Защитная сетка с двух сторн</p>
+                            </div>
+
+                            <div class="modal_product--inputs inputs_step3">
+                                <div class="modal_product--input">
+                                    <input type="radio" name="step_5--radio" id="step_5--1">
+                                    <label for="step_5--1" data-info="Без защитной сетки">00</label>
+                                </div>
+
+                                <div class="modal_product--input">
+                                    <input type="radio" name="step_5--radio" id="step_5--2">
+                                    <label for="step_5--2" data-info="Защитная сетка на выходе воздушного потока">01</label>
+                                </div>
+
+                                <div class="modal_product--input">
+                                    <input type="radio" name="step_5--radio" id="step_5--3">
+                                    <label for="step_5--3" data-info="Защитная сетка на выходе воздушного потока">10</label>
+                                </div>
+
+                                <div class="modal_product--input">
+                                    <input type="radio" name="step_5--radio" id="step_5--4">
+                                    <label for="step_5--4" data-info="Защитная сетка с двух сторн">11</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrap_step_6 wrap_step">
+                        <div class="step_1--top-line step_6__line"></div>
+                        <div class="step_1--info">
+                            <p class="step_nomber--text">Шаг 6 из 6</p>
+                            <h4 class="modal_product--title">Выберите сторону защитной сетки</h4>
+                            <div class="modal_product--minitext step_4--minitext step_6--minitext">
+                                <p>Выстота, мм</p>
+                                <p>Площадь фильтровального материала, м2</p>
+                                <p>Нач. сопротивление при скорости потока воздуха 0,45 м/с, Па</p>
+                            </div>
+
+                            <div class="modal_product--inputs inputs_step3">
+                                <div class="modal_product--input input_step6">
+                                    <input type="radio" name="step_6--radio" id="step_6--1">
+                                    <label for="step_6--1" data-info="130 Па">
+                                        <div class="step_6--label">40</div>
+                                        <div class="step_6--label">5</div>
+                                        <div class="step_6--label">130</div>
+                                    </label>
+                                </div>
+
+                                <div class="modal_product--input input_step6">
+                                    <input type="radio" name="step_6--radio" id="step_6--2">
+                                    <label for="step_6--2" data-info="120 Па">
+                                        <div class="step_6--label">45</div>
+                                        <div class="step_6--label">4</div>
+                                        <div class="step_6--label">120</div>
+                                    </label>
+                                </div>
+
+                                <div class="modal_product--input input_step6">
+                                    <input type="radio" name="step_6--radio" id="step_6--3">
+                                    <label for="step_6--3" data-info="100 Па">
+                                        <div class="step_6--label">55</div>
+                                        <div class="step_6--label">5</div>
+                                        <div class="step_6--label">100</div>
+                                    </label>
+                                </div>
+
+                                <div class="modal_product--input input_step6">
+                                    <input type="radio" name="step_6--radio" id="step_6--4">
+                                    <label for="step_6--4" data-info="90 Па">
+                                        <div class="step_6--label">66</div>
+                                        <div class="step_6--label">6</div>
+                                        <div class="step_6--label">90</div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="modal_product--choice">Ваш выбор</button>
+                    <div class="modal_product--button">
+                        <button type="button" class="modal_product--button-prev"><span class="button-prev__arrow"></span></button>
+                        <button type="button" class="modal_product--button-next">Дальше <span class="button-next__arrow"></span></button>
+                    </div>
+
+                </form>
+
+                <div class="modal_product--total">
+                        <div class="step_1--top-line step_6__line step_7_korzina"></div>
+
+                    <p class="product--total__title">Ваш выбор:</p>
+
+                    <p class="product--total__name">Фильтр ФТОВ НП</p>
+                    <ul class="product--total__list">
+                        <li class="product--total__item total__item_step1">1. Класс очистки <span class="total_item_steps total_item_step1"></span></li>
+                        <li class="product--total__item total__item_step2">2. Размеры фильтра <span class="total_item_steps total_item_step2"></span></li>
+                        <li class="product--total__item total__item_step3">3. Уплотнение <span class="total_item_steps total_item_step3"></span></li>
+                        <li class="product--total__item total__item_step4">4. Тип Уплотнение <span class="total_item_steps total_item_step4"></span></li>
+                        <li class="product--total__item total__item_step5">5. Защитная сетка <span class="total_item_steps total_item_step5"></span></li>
+                        <li class="product--total__item total__item_step6">6. Высота фильтровалного пакета <span class="total_item_steps total_item_step6"></span></li>
+                    </ul>
+                    <div class="button_korzina_wrap">
+                            <button type="button" class="korzina_button_prev"><span class="button-prev__arrow"></span></button>
+                            <button class="button_korzina" type="button" disabled>Добавить в корзину</button>
+                    </div>
+                </div>
+
+
+            </div>
 
 
         </div>
+
+        <div class="modal modal_request">
+                <button class="modal_close" type="button">x</button>
+                <div class="modal_wrap">
+                    <h2 class="modal_title">Оставить заявку</h2>
+                    <form action="post" class="modal_request_form">
+                        <div class="modal_item modal_item_text">
+                            <p class="modal_text">Ваше имя:*</p>
+                            <input type="text" class="input_star">
+                        </div>
+
+                        <div class="modal_item modal_item_text">
+                            <p class="modal_text">Ваш E-mail:*</p>
+                            <input type="email" class="input_star">
+                        </div>
+
+                        <div class="modal_item modal_item_text">
+                            <p class="modal_text">Компания:</p>
+                            <input type="text">
+                        </div>
+
+                        <div class="modal_item modal_item_text">
+                            <p class="modal_text">Телефон:*</p>
+                            <input type="text" class="input_star">
+                        </div>
+
+                        <div class="modal_item modal_item_message">
+                            <p class="modal_text">Сообщение</p>
+                            <textarea></textarea>
+                        </div>
+
+                        <div class="modal_item modal_file">
+                            <div class="file-upload">
+                                <input type="file" name="file" id="upload" class="inputfile hide" data-multiple-caption="{count} files selected" multiple />
+                                <label for="upload"><span>Прикрепить файл</span></label>
+                            </div>
+                        </div>
+
+                        <div class="modal_item modal_checkbox">
+                            <input type="checkbox" id="checkbox_modal" class="input_star_checkbox">
+                            <label for="checkbox_modal">Я ознакомлен и согласен с <a href="#">правилами</a> обработки персональных данных</label>
+                        </div>
+
+                        <div class="modal_item modal_submit">
+                            <button type="submit" value="Отправить сообщение">Отправить сообщение</button>
+                        </div>
+
+                        <div class="modal_item modal_star">
+                            <p>* Поля, отмеченные звездочкой, обязательны для заполнения!</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="js/jquery.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/scripts.js"></script>
     </body>
-    </html> 
-
-
-
-
+    </html>
